@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227434386}
   - component: {fileID: 227434385}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,6 +620,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: -85246324402830384, guid: 1a3f96ad43da14a9f84cb164d5262bbb, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 4548249858718568774, guid: 39a6b74002af54a2eafd8e92d45d3eb9, type: 3}
     - target: {fileID: 99980620, guid: 1a3f96ad43da14a9f84cb164d5262bbb, type: 3}
       propertyPath: m_Controller
       value: 
@@ -807,7 +811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762709155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.508, y: 0.242, z: 0}
+  m_LocalPosition: {x: -0.22, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -842,7 +846,7 @@ GameObject:
   - component: {fileID: 1888033488}
   - component: {fileID: 1888033487}
   - component: {fileID: 1888033489}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3653,7 +3657,7 @@ GameObject:
   - component: {fileID: 1928264876}
   - component: {fileID: 1928264877}
   - component: {fileID: 1928264878}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
