@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BloodScript : MonoBehaviour
+public class Blood : MonoBehaviour
 {
     void Start()
     {

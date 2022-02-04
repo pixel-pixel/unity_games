@@ -1,0 +1,29 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Bullet : MonoBehaviour
+{
+    private Rigidbody2D _rigidbody;
+    private Vector3 _lastVelocity;
+    
+    void Start()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+        Destroy(gameObject, 3f);
+    }
+
+    void Update()
+    {
+        _lastVelocity = _rigidbody.velocity;
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        var speed = _lastVelocity.magnitude;
+        var direction = Vector3.Reflect(_lastVelocity.normalized, col.contacts[0].normal);
+
+        _rigidbody.velocity = direction * Mathf.Max(speed, 3f);
+    }
+}

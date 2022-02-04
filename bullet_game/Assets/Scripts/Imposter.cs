@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class ImposterScript : MonoBehaviour
+public class Imposter : MonoBehaviour
 {
     public GameObject blood;
     private Animator _animator;
