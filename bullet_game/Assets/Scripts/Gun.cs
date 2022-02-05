@@ -10,13 +10,13 @@ public class Gun : MonoBehaviour
     public int countOfBullets = 3;
 
     private Rigidbody2D _gunRb;
-    private GameObject _parent;
+    private GameObject _player;
     private Vector2 _mousePosition;
 
     void Start()
     {
         _gunRb = GetComponent<Rigidbody2D>();
-        _parent = transform.parent.gameObject;
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -33,7 +33,7 @@ public class Gun : MonoBehaviour
 
     private void GunPositionToPlayer()
     {
-        transform.position = _parent.transform.position;
+        transform.position = _player.transform.position;
     }
 
     private void GunAngleToMouse()
