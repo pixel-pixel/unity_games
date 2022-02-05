@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
+    public int countOfBullets = 3;
 
     private Rigidbody2D _gunRb;
     private GameObject _parent;
@@ -23,7 +24,11 @@ public class Gun : MonoBehaviour
         GunPositionToPlayer();
         GunAngleToMouse();
 
-        if (Input.GetButtonDown("Fire1")) Fire();
+        if (Input.GetButtonDown("Fire1") && countOfBullets > 0)
+        {
+            Fire();
+            countOfBullets--;
+        }
     }
 
     private void GunPositionToPlayer()
