@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8889619683427477747}
   - component: {fileID: 8889619683427477744}
   - component: {fileID: -8764987093610889396}
-  - component: {fileID: 99980621}
   - component: {fileID: 99980622}
   - component: {fileID: 99980620}
   - component: {fileID: -85246324402830384}
@@ -137,32 +136,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.39, y: 0.4840474}
   m_EdgeRadius: 0
---- !u!61 &99980621
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8889619683427477750}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.22513682, y: -0.03999901}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.57714283, y: 0.8}
-    newSize: {x: 2.02, y: 2.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.09486997, y: 0.3405838}
-  m_EdgeRadius: 0
 --- !u!58 &99980622
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -189,7 +162,7 @@ Animator:
   m_GameObject: {fileID: 8889619683427477750}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28f8ef689fd03477184b3f70367955e9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1f9a9a85166d6431b814febe16dac695, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -211,4 +184,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c64a9bb913a4590b9b066cb78e5df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadImposterSprite: {fileID: 0}
+  blood: {fileID: 4548249858718568774, guid: 39a6b74002af54a2eafd8e92d45d3eb9, type: 3}
