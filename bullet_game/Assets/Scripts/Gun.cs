@@ -33,7 +33,7 @@ public class Gun : MonoBehaviour
 
     private void GunPositionToPlayer()
     {
-        transform.position = _player.transform.position;
+        transform.position = _player.transform.position + new Vector3(0, 0.08f);
     }
 
     private void GunAngleToMouse()
@@ -41,6 +41,7 @@ public class Gun : MonoBehaviour
         _mousePosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
         var posProb = _mousePosition - _gunRb.position;
         var angle = Mathf.Atan2(posProb.y, posProb.x) * Mathf.Rad2Deg;
+        GetComponent<SpriteRenderer>().flipY = angle > 90;
         _gunRb.rotation = angle;
     }
 
