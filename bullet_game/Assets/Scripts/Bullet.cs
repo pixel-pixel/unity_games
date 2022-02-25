@@ -1,16 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
+    private AudioSource _audio;
     private Vector3 _lastVelocity;
     
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _audio = GetComponent<AudioSource>();
         Destroy(gameObject, 3f);
     }
 
@@ -25,5 +24,6 @@ public class Bullet : MonoBehaviour
         var direction = Vector3.Reflect(_lastVelocity.normalized, col.contacts[0].normal);
 
         _rigidbody.velocity = direction * Mathf.Max(speed, 3f);
+        _audio.Play();
     }
 }
