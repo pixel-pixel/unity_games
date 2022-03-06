@@ -4,6 +4,7 @@ using UnityEngine;
 public class Imposter : MonoBehaviour
 {
     public GameObject blood;
+    public bool isDead = false;
     
     private Animator _animator;
     private AudioSource _audio;
@@ -18,6 +19,7 @@ public class Imposter : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet" && !_animator.GetBool("isDead"))
         {
+            isDead = true;
             _animator.SetBool("isDead", true);
             Instantiate(blood, transform.position, Quaternion.identity);
             _audio.Play();
