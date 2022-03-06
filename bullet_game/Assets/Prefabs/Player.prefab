@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1023529458}
   - component: {fileID: 1023529459}
   - component: {fileID: 1023529460}
+  - component: {fileID: 6077816155212832412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: c76b67b389bd04319ad371d604886187, type: 3}
+  m_Sprite: {fileID: -1182601635, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &4492822451096233616
 Rigidbody2D:
   serializedVersion: 4
@@ -122,11 +123,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0132972, y: -0.072116435}
+  m_Offset: {x: 0.0132972, y: -0.30211642}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.73333335, y: 0.80333334}
+    oldSize: {x: 0.6722222, y: 1.1138889}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,7 +149,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01899603, y: 0.15196867}
+  m_Offset: {x: 0.01899603, y: -0.0219687}
   serializedVersion: 2
   m_Radius: 0.18511133
 --- !u!95 &1023529460
@@ -171,3 +172,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6077816155212832412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4492822451096233617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d235fd642ce54b219330f42fee30bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skins: {fileID: 11400000, guid: 1674be115729efa4794f5f0b7e0b8648, type: 2}
+  levels: {fileID: 11400000, guid: 6105452e2dada4a14b64f03ff43d8650, type: 2}
