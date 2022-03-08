@@ -16,7 +16,7 @@ public class DBLevels : ScriptableObject
 
     public Level CurrentLevel()
     {
-        var currentIndex = SceneManager.GetActiveScene().buildIndex;
+        var currentIndex = SceneManager.GetActiveScene().buildIndex-1;
         return levels[currentIndex];
     }
 }

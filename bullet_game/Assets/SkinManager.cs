@@ -30,7 +30,6 @@ public class SkinManager : MonoBehaviour
     }
     private void Start()
     {
-        PlayerPrefs.SetInt("money", 2500);
         index = PlayerPrefs.GetInt("activSkin");
         coins = PlayerPrefs.GetInt("money");
         SaveElements();
