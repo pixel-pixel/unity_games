@@ -135,6 +135,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4649601955786361566, guid: 81bf452c17c9a4468a90ac8c30482083, type: 3}
   bulletSpeed: 20
   countOfBullets: 3
+  levels: {fileID: 11400000, guid: 6105452e2dada4a14b64f03ff43d8650, type: 2}
 --- !u!50 &719305851695951566
 Rigidbody2D:
   serializedVersion: 4

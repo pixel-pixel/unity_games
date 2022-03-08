@@ -41,13 +41,14 @@ public class Player : MonoBehaviour
 
     IEnumerator Won()
     {
+        _currentLevel.win = true;
         yield return new WaitForSeconds(3f);
-        if (_currentLevel.isFinished) yield break;
 
         _currentLevel.isFinished = true;
-        _currentLevel.win = true;
+
+        Debug.Log("won");
     }
-    
+
     IEnumerator Lost()
     {
         yield return new WaitForSeconds(3f);

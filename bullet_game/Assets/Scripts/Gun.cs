@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
-{    
+{
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
     public int countOfBullets = 3;
-    
+    public DBLevels levels;
+
     private Rigidbody2D _gunRb;
     private AudioSource _audio;
     private GameObject _player;
@@ -26,7 +25,11 @@ public class Gun : MonoBehaviour
         GunPositionToPlayer();
         GunAngleToMouse();
 
-        if (Input.GetButtonDown("Fire1") && countOfBullets > 0)
+        if (
+            Input.GetButtonDown("Fire1") &&
+            countOfBullets > 0 &&
+            !levels.CurrentLevel().isFinished
+            )
         {
             Fire();
             countOfBullets--;
@@ -51,7 +54,7 @@ public class Gun : MonoBehaviour
     {
         var bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         var bulletRd = bullet.GetComponent<Rigidbody2D>();
-        
+
         bulletRd.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
         _audio.Play();
     }
