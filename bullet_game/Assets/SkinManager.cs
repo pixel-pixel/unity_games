@@ -32,6 +32,7 @@ public class SkinManager : MonoBehaviour
     {
         index = PlayerPrefs.GetInt("activSkin");
         coins = PlayerPrefs.GetInt("money");
+        mainPrice.text = $"{coins}";
         SaveElements();
         impostorMain.GetComponent<Image>().sprite = dataSkin.scins[index]._skin;
     }

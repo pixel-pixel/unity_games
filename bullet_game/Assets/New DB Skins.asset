@@ -16,27 +16,27 @@ MonoBehaviour:
   - _isBought: 1
     _priceSkin: 0
     _skin: {fileID: -1182601635, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
-  - _isBought: 1
+  - _isBought: 0
     _priceSkin: 100
     _skin: {fileID: -1722927925, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
-  - _isBought: 1
+  - _isBought: 0
     _priceSkin: 200
     _skin: {fileID: 956981739, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
   - _isBought: 0
     _priceSkin: 400
     _skin: {fileID: 696699864, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
-  - _isBought: 1
-    _priceSkin: 750
+  - _isBought: 0
+    _priceSkin: 600
     _skin: {fileID: 2032474562, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
-  - _isBought: 1
-    _priceSkin: 950
+  - _isBought: 0
+    _priceSkin: 1000
     _skin: {fileID: 720249160, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
   - _isBought: 0
-    _priceSkin: 1500
+    _priceSkin: 1300
     _skin: {fileID: -1378985035, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
   - _isBought: 0
-    _priceSkin: 2000
+    _priceSkin: 1500
     _skin: {fileID: 2124788161, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}
   - _isBought: 0
-    _priceSkin: 2500
+    _priceSkin: 2999
     _skin: {fileID: 1832835884, guid: 81752fcff5ca2c649a78baefc49223fe, type: 3}

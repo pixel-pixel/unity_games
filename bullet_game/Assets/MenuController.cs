@@ -27,6 +27,7 @@ public class MenuController : MonoBehaviour
         if(currentLevel == 0)
         {
             currentLevel += 1;
+            PlayerPrefs.SetInt("currentLevel", currentLevel);
         }
         SceneManager.LoadScene(currentLevel);
     }
