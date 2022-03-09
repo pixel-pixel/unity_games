@@ -23,7 +23,6 @@ public class Gun : MonoBehaviour
     void Update()
     {
         GunPositionToPlayer();
-        GunAngleToMouse();
 
         if (
             Input.GetButtonDown("Fire1") &&
@@ -31,6 +30,7 @@ public class Gun : MonoBehaviour
             !levels.CurrentLevel().isFinished
             )
         {
+            GunAngleToMouse();
             Fire();
             countOfBullets--;
         }
@@ -43,11 +43,11 @@ public class Gun : MonoBehaviour
 
     private void GunAngleToMouse()
     {
-        _mousePosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
-        var posProb = _mousePosition - _gunRb.position;
-        var angle = Mathf.Atan2(posProb.y, posProb.x) * Mathf.Rad2Deg;
-        GetComponent<SpriteRenderer>().flipY = angle > 90;
-        _gunRb.rotation = angle;
+        var mousePosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
+        
+        var direction = mousePosition - transform.position;
+        var angle = Vector2.SignedAngle(Vector2.right, direction);
+        transform.eulerAngles = new Vector3 (0, 0, angle);
     }
 
     private void Fire()
