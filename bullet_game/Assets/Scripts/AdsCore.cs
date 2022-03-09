@@ -8,7 +8,7 @@ public class AdsCore : MonoBehaviour, IUnityAdsListener
 {
     private bool _testMode = false;
 
-    private string _gameId = "4619417";
+    private string _gameId = "4606937";
 
     private string _video = "Interstitial_Android";
     private string _banner = "Banner_Android";
