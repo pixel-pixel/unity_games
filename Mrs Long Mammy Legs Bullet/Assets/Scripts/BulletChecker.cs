@@ -16,7 +16,7 @@ public class BulletChecker : MonoBehaviour
         _bulletCount = _gun.countOfBullets;
         _bullets = new();
 
-        _position = transform.position + new Vector3(-0.75f, 0.03f);
+        _position = transform.position + new Vector3(-0.75f, 0.00f);
         for (var i = 0; i < _bulletCount; i++)
         {
             _bullets.Add(Instantiate(miniBullet, _position, Quaternion.identity));
