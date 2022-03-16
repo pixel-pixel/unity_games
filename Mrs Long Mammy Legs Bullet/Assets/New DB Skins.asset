@@ -19,7 +19,7 @@ MonoBehaviour:
   - _isBought: 0
     _priceSkin: 100
     _skin: {fileID: -438787904, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
-  - _isBought: 1
+  - _isBought: 0
     _priceSkin: 200
     _skin: {fileID: 2128099928, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
   - _isBought: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   - _isBought: 0
     _priceSkin: 1000
     _skin: {fileID: -720651273, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
-  - _isBought: 1
+  - _isBought: 0
     _priceSkin: 1300
     _skin: {fileID: -1732435036, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
   - _isBought: 0
