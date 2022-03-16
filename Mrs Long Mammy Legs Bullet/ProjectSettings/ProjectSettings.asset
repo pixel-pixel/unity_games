@@ -153,7 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.bullet_game
+    Android: com.Bartish.MrImposterBullet
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 0
@@ -264,15 +264,15 @@ PlayerSettings:
   androidGamepadSupportLevel: 0
   chromeosInputEmulation: 1
   AndroidMinifyWithR8: 0
-  AndroidMinifyRelease: 1
-  AndroidMinifyDebug: 0
+  AndroidMinifyRelease: 0
+  AndroidMinifyDebug: 1
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 9f5e2c733126074429353ed4b963a54c, type: 3}
+      m_Icon: {fileID: 2800000, guid: 994cad465f55590419f18d5176423676, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -672,7 +672,7 @@ PlayerSettings:
   scriptingBackend:
     Android: 1
   il2cppCompilerConfiguration:
-    Android: 1
+    Android: 0
   managedStrippingLevel:
     Android: 1
   incrementalIl2cppBuild: {}
