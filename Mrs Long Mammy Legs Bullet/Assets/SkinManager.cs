@@ -34,7 +34,7 @@ public class SkinManager : MonoBehaviour
         coins = PlayerPrefs.GetInt("money");
         mainPrice.text = $"{coins}";
         SaveElements();
-        impostorMain.GetComponent<Image>().sprite = dataSkin.scins[index]._skin;
+        //impostorMain.GetComponent<Image>().sprite = dataSkin.scins[index]._skin;
     }
     public void SaveElements()
     {
@@ -86,7 +86,7 @@ public class SkinManager : MonoBehaviour
     {
         setsButton.SetActive(false);
         PlayerPrefs.SetInt("activSkin", index);
-        impostorMain.GetComponent<Image>().sprite = dataSkin.scins[index]._skin;
+        //impostorMain.GetComponent<Image>().sprite = dataSkin.scins[index]._skin;
     }
     public void BuySkin()
     {
