@@ -8,16 +8,17 @@ public class Player : MonoBehaviour
 {
     public DBSkins skins;
     public DBLevels levels;
+    public GameObject head;
     private Level _currentLevel;
     private Gun _gun;
     private Imposter[] _imposters;
     
-    // private void Awake()
-    // {
-    //     var skinIndex = PlayerPrefs.GetInt("activSkin");
-    //     var sprite = skins.scins[skinIndex]._skin;
-    //     GetComponent<SpriteRenderer>().sprite = sprite;
-    // }
+    private void Awake()
+    {
+        var skinIndex = PlayerPrefs.GetInt("activSkin");
+        var sprite = skins.scins[skinIndex]._skin;
+        head.GetComponent<SpriteRenderer>().sprite = sprite;
+    }
 
     private void Start()
     {
@@ -46,8 +47,6 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         _currentLevel.isFinished = true;
-
-        Debug.Log("won");
     }
 
     IEnumerator Lost()
