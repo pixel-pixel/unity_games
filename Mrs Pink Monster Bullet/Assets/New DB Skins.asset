@@ -15,28 +15,28 @@ MonoBehaviour:
   scins:
   - _isBought: 1
     _priceSkin: 0
-    _skin: {fileID: 1137975773, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: 1847163578, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 100
-    _skin: {fileID: -438787904, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: -2024813792, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 200
-    _skin: {fileID: 2128099928, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: -141592555, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 400
-    _skin: {fileID: -470881805, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: -2005302910, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 600
-    _skin: {fileID: 1269375746, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: 426279190, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 1000
-    _skin: {fileID: -720651273, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: -949049056, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 1300
-    _skin: {fileID: -1732435036, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: -2061743895, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 1500
-    _skin: {fileID: -238039008, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: -739634609, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
   - _isBought: 0
     _priceSkin: 2999
-    _skin: {fileID: 709049607, guid: d915e2038f614d64a8ecd75f867caa55, type: 3}
+    _skin: {fileID: 783713036, guid: bbabb0ddaeb4b4841880cad6e7848c9a, type: 3}
