@@ -12,6 +12,7 @@ public class SwitchScene : MonoBehaviour
     public GameObject WinUI;
     public GameObject LoseUI;
     private int currentMoney;
+    private int counterWinLevel;
 
     [SerializeField] private Text textCurrentMoney;
     [SerializeField] private Text textMoneyFrimWin;
@@ -22,11 +23,18 @@ public class SwitchScene : MonoBehaviour
         currentLevel = PlayerPrefs.GetInt("currentLevel");
         Debug.Log(currentLevel);
         currentMoney = PlayerPrefs.GetInt("money");
+        counterWinLevel = PlayerPrefs.GetInt("counterWinLevel");
+        counterWinLevel += 1;
+        PlayerPrefs.SetInt("counterWinLevel", counterWinLevel);
     }
     private int myRandMoney = 0;//if you win, gets money 
     public void GetWinUI()
     {
-        controllerADS.ShowSkipVideo();
+        Debug.Log(counterWinLevel);
+        Debug.Log(counterWinLevel%2);
+        if (counterWinLevel % 2 == 0)
+            controllerADS.ShowSkipVideo();
+
         myRandMoney = Random.Range(25, 100);
         textMoneyFrimWin.text = $"+{myRandMoney}";
         textCurrentMoney.text = $"{currentMoney + myRandMoney}";
@@ -36,8 +44,10 @@ public class SwitchScene : MonoBehaviour
     }
     public void GetLoseUI()
     {
+        if (counterWinLevel % 2 == 0)
+            controllerADS.ShowSkipVideo();
+
         textCurrentMoneyLoseIcon.text = $"{currentMoney}"; 
-        controllerADS.ShowSkipVideo();
         LoseUI.SetActive(true); 
     }
     public void NextLevel()

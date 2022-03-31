@@ -840,6 +840,12 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     Unity Ads: 1
   luminIcon:
     m_Name: 
@@ -854,10 +860,10 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 4847521f-e042-475c-9840-dabf637571e7
+  cloudProjectId: e21c9a70-acc4-4eb1-8fad-256b9bc45443
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Bullet_Impostor
+  projectName: PinkMonsterIOS
   organizationId: ora-show
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
