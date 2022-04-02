@@ -728,10 +728,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4492822451096233618, guid: 9457d097077d0475e9a9e2d078a4ed97, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9457d097077d0475e9a9e2d078a4ed97, type: 3}
 --- !u!1001 &1316934883
@@ -3149,6 +3145,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 659591003, guid: 3a5ae814b5524444a9df36e67af1fdcc, type: 3}
+      propertyPath: iOSGameId
+      value: 4663012
+      objectReference: {fileID: 0}
+    - target: {fileID: 659591003, guid: 3a5ae814b5524444a9df36e67af1fdcc, type: 3}
+      propertyPath: androidGameId
+      value: 4663013
+      objectReference: {fileID: 0}
     - target: {fileID: 1485540448303024353, guid: 3a5ae814b5524444a9df36e67af1fdcc, type: 3}
       propertyPath: m_Name
       value: Canvas

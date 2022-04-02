@@ -158,10 +158,10 @@ PlayerSettings:
     iPhone: com.Bartish.MrsMommyLongLegsBullet
   buildNumber:
     Standalone: 0
-    iPhone: 0
+    iPhone: 1
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 2
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
@@ -249,8 +249,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: userBullet.keystore'
-  AndroidKeyaliasName: bulletimpostor
+  AndroidKeystoreName: '{dedicated}: android_keys/keys.keystore'
+  AndroidKeyaliasName: kek
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
@@ -861,10 +861,10 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: e21c9a70-acc4-4eb1-8fad-256b9bc45443
+  cloudProjectId: 84de5803-d781-41a6-a582-42479adaf579
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: PinkMonsterIOS
+  projectName: Bullet_Mommy
   organizationId: ora-show
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
