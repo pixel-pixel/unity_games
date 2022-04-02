@@ -8,7 +8,7 @@ public class SwitchScene : MonoBehaviour
 {
     private int currentLevel;
     public DBLevels levels;
-    public AdsCore controllerADS;
+    public Ads controllerADS;
     public GameObject WinUI;
     public GameObject LoseUI;
     private int currentMoney;
@@ -33,7 +33,7 @@ public class SwitchScene : MonoBehaviour
         Debug.Log(counterWinLevel);
         Debug.Log(counterWinLevel%2);
         if (counterWinLevel % 2 == 0)
-            controllerADS.ShowSkipVideo();
+            controllerADS.ShowAd();
 
         myRandMoney = Random.Range(25, 100);
         textMoneyFrimWin.text = $"+{myRandMoney}";
@@ -45,7 +45,7 @@ public class SwitchScene : MonoBehaviour
     public void GetLoseUI()
     {
         if (counterWinLevel % 2 == 0)
-            controllerADS.ShowSkipVideo();
+            controllerADS.ShowAd();
 
         textCurrentMoneyLoseIcon.text = $"{currentMoney}"; 
         LoseUI.SetActive(true); 
@@ -74,12 +74,12 @@ public class SwitchScene : MonoBehaviour
 
     public void Restart()
     {
-        controllerADS.ShowFullVideo();
+        controllerADS.ShowAd();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void ExitToMenu()
     {
-        controllerADS.ShowFullVideo();
+        controllerADS.ShowAd();
         SceneManager.LoadScene(0);
     }
     private bool enableUpdate = true;// if win or lose = 1 times Update

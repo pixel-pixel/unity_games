@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.0.1
+  bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -155,6 +155,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.Bartish.MrsMommyLongLegsBullet
     Standalone: com.DefaultCompany.2DProject
+    iPhone: com.Bartish.MrsMommyLongLegsBullet
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -272,7 +273,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 6ad757c42f842e44296b21af5f84c9db, type: 3}
+      m_Icon: {fileID: 2800000, guid: c574f7c5161c34c2ba35f347b30aab45, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
