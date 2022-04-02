@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DB Levels
   m_EditorClassIdentifier: 
   levels:
-  - isFinished: 1
+  - isFinished: 0
     win: 0
   - isFinished: 0
     win: 0

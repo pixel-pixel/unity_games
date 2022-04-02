@@ -379,7 +379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2782699, y: 0.6896903}
   m_AnchorMax: {x: 0.72863495, y: 0.80776775}
-  m_AnchoredPosition: {x: 4, y: -0.4369812}
+  m_AnchoredPosition: {x: -2.5, y: -0.4369812}
   m_SizeDelta: {x: -84.1671, y: -13.457596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1485540447730252279
@@ -455,7 +455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.078, y: 0.22953543}
   m_AnchorMax: {x: 0.9247302, y: 0.6896903}
-  m_AnchoredPosition: {x: -1.1079712, y: 16.923004}
+  m_AnchoredPosition: {x: -11.43396, y: 16.923004}
   m_SizeDelta: {x: -157.6295, y: -21.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1485540447818580321
@@ -532,7 +532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16934945, y: 0.079}
   m_AnchorMax: {x: 0.37100002, y: 0.22953543}
-  m_AnchoredPosition: {x: -0.7784424, y: -0.23999023}
+  m_AnchoredPosition: {x: -21.278717, y: -0.23999023}
   m_SizeDelta: {x: -1.6542053, y: 2.3699036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1485540447835430343
@@ -799,6 +799,8 @@ GameObject:
   - component: {fileID: 1485540448303024382}
   - component: {fileID: 1485540448303024379}
   - component: {fileID: 1485540448303024378}
+  - component: {fileID: 659591003}
+  - component: {fileID: 659591004}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -902,7 +904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels: {fileID: 11400000, guid: 6105452e2dada4a14b64f03ff43d8650, type: 2}
-  controllerADS: {fileID: 1485540448303024378}
+  controllerADS: {fileID: 659591004}
   WinUI: {fileID: 1485540448745951796}
   LoseUI: {fileID: 1485540448699316927}
   textCurrentMoney: {fileID: 3805550021794947933}
@@ -915,9 +917,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485540448303024353}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0720e6d01c2ce842a18224083dbee2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &659591003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485540448303024353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6349b1d2d434400ba705255d106298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidGameId: 4686569
+  iOSGameId: 4686568
+  testMode: 1
+--- !u!114 &659591004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485540448303024353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15f50ce1bf794c2c9ca0e78813c35c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1485540448572266824
@@ -1037,7 +1066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.085174724, y: 0.23851553}
   m_AnchorMax: {x: 0.92800003, y: 0.77645147}
-  m_AnchoredPosition: {x: -2.2410278, y: 6}
+  m_AnchoredPosition: {x: -11.43396, y: 6}
   m_SizeDelta: {x: -154.6295, y: -105.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1485540448586609665
@@ -1615,7 +1644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10963495, y: 0.84145796}
   m_AnchorMax: {x: 0.89873016, y: 0.9823031}
-  m_AnchoredPosition: {x: -0.6970215, y: 2}
+  m_AnchoredPosition: {x: 2.3029785, y: 2}
   m_SizeDelta: {x: 1.1667023, y: -1.4082031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6605282610794337247
@@ -1849,7 +1878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10963495, y: 0.84145796}
   m_AnchorMax: {x: 0.89873016, y: 0.9823031}
-  m_AnchoredPosition: {x: -0.6970215, y: 2}
+  m_AnchoredPosition: {x: 2.3029785, y: 2}
   m_SizeDelta: {x: 1.1667023, y: -1.4082031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7269632003102202716

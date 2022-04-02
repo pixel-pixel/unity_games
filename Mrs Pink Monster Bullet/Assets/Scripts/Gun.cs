@@ -39,7 +39,7 @@ public class Gun : MonoBehaviour
 
     private void GunPositionToPlayer()
     {
-        transform.position = _player.transform.position;
+        transform.localPosition = new Vector3(0.135f, 0.01f);
     }
 
     private void GunAngleToMouse()
